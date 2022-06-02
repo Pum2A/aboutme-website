@@ -213,12 +213,16 @@ main{
     align-items: center;
     text-align: start;
 }
-
+.tel{
+    color: #fff;
+}
 .email{
     padding-left: 20px;
+    color: #fff;
 }
 .email2{
     padding-left: 20px;
+    color: #fff;
 }
 
 .port-title{
@@ -281,5 +285,17 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
+}
+
+footer{
+    height: 8vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    padding-top: 30px;
+    font-size: 1rem;
 }
 
