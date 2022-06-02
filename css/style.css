@@ -15,14 +15,10 @@ a{
 
 .top{
     height: 8vh;
-    top: 0;
-    left: 0;
-    width: auto;
     background-color: black;
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 30px;
 }
 .menu{
     color: #fff;
@@ -31,6 +27,7 @@ a{
     font-size: 2.5rem;
     transition: 0.5s;
     cursor: pointer;
+    padding-left: 30px;
     
 }
 .search{
@@ -40,14 +37,12 @@ a{
     align-items: center;
     font-size: 2.5rem;
     flex: 1;
-    padding-right: 25px;
+    padding-right: 30px;
 }
 .input-search{
-    display: flex;
-    width: auto;
+    display: none;
     height: 35px;
-    margin-right: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: solid;
     border-color: black;
     align-items: center;
@@ -113,14 +108,75 @@ header{
     font-size: 1.8rem;
 }
 
-@media screen and (min-width: 203px) {
+.h1-content{
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: inherit;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    font-weight: normal;    
+}
+.h1-background-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 0px 0px 0px 0px;
     
-    .top{
-        width: 122%;
-    }
+
 }
 
-@media screen and (min-width: 1024px) {
+.about-content{
+    padding: 20px 20px 0px 20px;
+    font-size: 1.8rem;
+    text-align: justify;
+    color: #fff
     
+}
+.about-content2{
+    padding: 20px 20px 0px 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff
+    
+}
+.about-imgs{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.about-imgs img{
+    padding: 5px;
+}
+
+.cv-title{
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: inherit;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    font-weight: normal;   
+}
+.cv-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 0px 0px 0px 0px;
+    
+}
+.cv-content{
+    padding: 20px 20px 0px 20px;
+    color: #fff
 }
 
