@@ -28,6 +28,7 @@ input{
     display: flex;
     justify-content: start;
     align-items: center;
+    border-bottom: 3px solid #fff;
 }
 .menu{
     color: #fff;
@@ -74,6 +75,11 @@ input{
     color: #fff;
     padding-left: 15px;
     font-size: 3.5rem;
+    transition: 0.5s;
+}
+.logo:hover{
+    color: #d1bdbd;
+    transition: 0.5s;
 }
 
 nav{
@@ -89,7 +95,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #bb6719;
+    color: #c4b6ac;
     transition: 0.3s;
 }
 
@@ -104,7 +110,7 @@ nav a:hover{
     left: -100%;
     transition: ease-in-out 0.5s;
     border-radius: 0.5s;
-    border: 1px solid black;
+    border-right: 3px solid #fff;
     
 }
 .navBar a{
@@ -129,11 +135,11 @@ header{
     padding: 30px 0px 0px 0px;
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.7rem;
     text-align: inherit;
     color: rgb(255, 255, 255);
     z-index: 1000;
-    font-weight: normal;    
+    font-weight: normal;   
 }
 .h1-background-content{
     display: flex;
@@ -238,7 +244,7 @@ main{
     background-color: #181818;
     height: 133vh;
 }
-.cont-title{
+.contact-title{
     padding: 50px 0px 30px 0px;
     display: flex;
     justify-content: center;
@@ -248,43 +254,58 @@ main{
     z-index: 1000;
     font-weight: normal;
 }
-.cont-text{
+.contact-text{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
+    color: #fff;
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    padding: 0px 0px 0px 0px;
 }
-.cont-content{
-    padding: 20px 0px 0px 50px;
-    font-size: 1.3rem;
-    text-align: justify;
-    color: rgb(7, 6, 6);
+.contact-content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: start;
+    text-align: center;
 }
-.tel{
+.tel, .email, .email2, .localization{
+    height: 60px;
+    width: 200px;
     color: #fff;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 2.4rem;
+    padding-top: 20px;
+    background-color: black;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.email{
-    padding-left: 20px;
-    color: #fff;
+.email2:hover{
+    background-color: #121010;
+    transition: 0.5s;
 }
-.email2{
-    padding-left: 20px;
-    color: #fff;
+.email:hover{
+    background-color: #121010;
+    transition: 0.5s;
 }
+.tel:hover{
+    background-color: #121010;
+    transition: 0.5s;
+}
+.localization:hover{
+    background-color: #121010;
+    transition: 0.5s;
+}
+
 
 .port-title{
     padding: 30px 0px 30px 0px;
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: inherit;
     color: rgb(255, 255, 255);
     z-index: 1000;
@@ -351,11 +372,19 @@ footer{
     .about-content{
         text-align: center;
     }
+    .contact-content{
+        justify-content: center;
+        flex-direction: inherit;
+    }
+    
 }
 @media screen and (min-width: 1024px) {
 
     .input-search{
-        width: 300px;
+        width: 250px;
     }
+    
+
+    
     
 }
