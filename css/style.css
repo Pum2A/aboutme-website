@@ -13,6 +13,11 @@ a{
     color: #fff;
 }
 
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .top{
     height: 8vh;
     background-color: black;
@@ -102,7 +107,7 @@ nav a:hover{
 
 header{
     background-color:#181818;
-    height: 100vh;
+    height: 125vh;
     width: 100%;
     text-align: justify;
     font-size: 1.8rem;
@@ -152,6 +157,7 @@ header{
 }
 .about-imgs img{
     padding: 5px;
+    border-radius: 25%;
 }
 
 .cv-title{
@@ -176,8 +182,37 @@ header{
     
 }
 .cv-content{
-    padding: 20px 20px 0px 20px;
-    color: #fff
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    color: #fff;
+    background-color: #181818;
+}
+
+.cv-box1{
+    background-color: #fff;
+    height: 80px;
+    width: 190px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-bottom: orange 3px solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pizza-site{
+    font-size: 2.5rem;
+    
+}
+.first-site{
+    font-size: 2.5rem;
+}
+.cv-box1:hover{
+    background-color: rgba(255, 255, 255, 0.795);
+    transition: 0.5s;
 }
 main{
     background-color: #181818;
@@ -249,18 +284,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-.port-box1{
-    height: 150px;
-    width: 200px;
-    background: black;
-    margin: 0 auto;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
+
 .port-box1:hover{
     background-color: #884a185d;
     transition: 0.5s;
