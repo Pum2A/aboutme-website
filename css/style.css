@@ -18,6 +18,10 @@ ul, li{
     list-style-type: none;
 }
 
+input{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.5rem;
+}
 .top{
     height: 8vh;
     background-color: black;
@@ -198,27 +202,28 @@ header{
 }
 
 .cv-box1{
-    background-color: #fff;
+    background-color: #000;
     height: 80px;
-    width: 190px;
+    width: 170px;
     margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;
-    border-bottom: orange 3px solid;
+    color: #fff;
+    border-right: #fff 3px solid;
+    border-left: #fff 3px solid;
     cursor: pointer;
     transition: 0.5s;
 }
 .pizza-site{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     
 }
 .first-site{
     font-size: 2.5rem;
 }
 .cv-box1:hover{
-    background-color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(6, 6, 6, 0.795);
     transition: 0.5s;
 }
 main{
@@ -330,3 +335,19 @@ footer{
     font-size: 1rem;
 }
 
+@media screen and (min-width: 700px) {
+   
+    .input-search{
+        width: 200px;
+    }
+    .about-content{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+
+    .input-search{
+        width: 300px;
+    }
+    
+}
