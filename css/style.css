@@ -47,6 +47,7 @@ input{
     font-size: 2.5rem;
     flex: 1;
     padding-right: 30px;
+    cursor: pointer;
 }
 .input-search{
     display: none;
@@ -167,10 +168,17 @@ header{
     margin: 20px;
 }
 .about-imgs img{
-    padding: 5px;
-    border-radius: 25%;
+    padding: 10px;
+    /* border-radius: 25%; */
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    transition: 0.5s;
 }
-
+.about-imgs img:hover{
+    background-color: #121010;
+    transition: 0.5s;
+}
 .cv-title{
     padding: 30px 0px 0px 0px;
     display: flex;
