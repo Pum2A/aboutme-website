@@ -34,9 +34,25 @@ search.addEventListener('click', () => {
         search.innerText = 'search';
     }
 });
-document.querySelector('#contactContent').addEventListener('click', (event) => {
-    if(event.target.id === 'contactP'){
-        event.target.style.display = 'none'
-    }
+// document.querySelector('#contactContent').addEventListener('click', (event) => {
+//     const contactPAfter = document.querySelector('#contactPAfter')
+//     const stylecontactPAfter = getComputedStyle(contactPAfter)
+//     if(event.target.id === 'contactP'){
+//         contactPAfter.style.display ='flex'
+//     } else {
+//         contactPAfter.style.display ='none'
+//     }
 
+// })
+
+document.querySelectorAll('#contactP').forEach((element) => {
+    element.addEventListener('click', () =>{
+        const contactPAfter = document.querySelector('#contactPAfter')
+        const styleContactPAfter = getComputedStyle(contactPAfter4)
+        if(styleContactPAfter.display == 'none'){
+            contactPAfter.style.display ='flex'
+        } else {
+            contactPAfter.style.display ='none'
+        }
+    })
 })
