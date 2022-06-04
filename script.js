@@ -34,25 +34,44 @@ search.addEventListener('click', () => {
         search.innerText = 'search';
     }
 });
-// document.querySelector('#contactContent').addEventListener('click', (event) => {
-//     const contactPAfter = document.querySelector('#contactPAfter')
-//     const stylecontactPAfter = getComputedStyle(contactPAfter)
-//     if(event.target.id === 'contactP'){
-//         contactPAfter.style.display ='flex'
-//     } else {
-//         contactPAfter.style.display ='none'
-//     }
+document.querySelector('#contactContent #contactP').addEventListener('click', () => {
+    const contactPAfter = document.querySelector('#contactPAfter')
+    const stylecontactPAfter = getComputedStyle(contactPAfter)
+    if(stylecontactPAfter.display == 'none'){
+        contactPAfter.style.display ='flex'
+    } else {
+        contactPAfter.style.display ='none'
+    }
 
-// })
-
-document.querySelectorAll('#contactP').forEach((element) => {
-    element.addEventListener('click', () =>{
-        const contactPAfter = document.querySelector('#contactPAfter')
-        const styleContactPAfter = getComputedStyle(contactPAfter4)
-        if(styleContactPAfter.display == 'none'){
-            contactPAfter.style.display ='flex'
-        } else {
-            contactPAfter.style.display ='none'
-        }
-    })
 })
+document.querySelector('#contactContent #contactP2').addEventListener('click', () => {
+    const contactPAfter2 = document.querySelector('#contactPAfter2')
+    const stylecontactPAfter2 = getComputedStyle(contactPAfter2)
+    if(stylecontactPAfter2.display == 'none'){
+        contactPAfter2.style.display ='flex'
+    } else {
+        contactPAfter2.style.display ='none'
+    }
+
+})
+document.querySelector('#contactContent #contactP3').addEventListener('click', () => {
+    const contactPAfter3 = document.querySelector('#contactPAfter3')
+    const stylecontactPAfter3 = getComputedStyle(contactPAfter3)
+    if(stylecontactPAfter3.display == 'none'){
+        contactPAfter3.style.display ='flex'
+    } else {
+        contactPAfter3.style.display ='none'
+    }
+
+})
+document.querySelector('#contactContent #contactP4').addEventListener('click', () => {
+    const contactPAfter4 = document.querySelector('#contactPAfter4')
+    const stylecontactPAfter4 = getComputedStyle(contactPAfter4)
+    if(stylecontactPAfter4.display == 'none'){
+        contactPAfter4.style.display ='flex'
+    } else {
+        contactPAfter4.style.display ='none'
+    }
+
+})
+
