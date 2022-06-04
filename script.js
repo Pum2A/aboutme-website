@@ -6,6 +6,8 @@ const search = document.querySelector('#search')
 const searchInput = document.querySelector('#inputSearch')
 const styleSearchInput = getComputedStyle(inputSearch)
 
+
+
 hamburger.addEventListener('click', () => {
     if(styleNav.display == 'none') {
 
@@ -32,3 +34,9 @@ search.addEventListener('click', () => {
         search.innerText = 'search';
     }
 });
+document.querySelector('#contactContent').addEventListener('click', (event) => {
+    if(event.target.id === 'contactP'){
+        event.target.style.display = 'none'
+    }
+
+})

@@ -283,6 +283,8 @@ main{
     cursor: pointer;
     transition: 0.5s;
 }
+
+
 .email2:hover{
     background-color: #121010;
     transition: 0.5s;
